@@ -2,10 +2,10 @@
 <ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <!-- Unique Name of Cds Solution-->
-    <UniqueName>Solutions</UniqueName>
+    <UniqueName>ActivityAnalyzer</UniqueName>
     <LocalizedNames>
       <!-- Localized Solution Name in language code -->
-      <LocalizedName description="Solutions" languagecode="1033" />
+      <LocalizedName description="Activity Analyzer" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0</Version>
@@ -13,21 +13,21 @@
     <Managed>2</Managed>
     <Publisher>
       <!-- Unique Publisher Name of Cds Solution -->
-      <UniqueName>developer</UniqueName>
+      <UniqueName>Harinarayanan</UniqueName>
       <LocalizedNames>
         <!-- Localized Cds Publisher Name in language code-->
-        <LocalizedName description="developer" languagecode="1033" />
+        <LocalizedName description="Harinarayanan" languagecode="1033" />
       </LocalizedNames>
       <Descriptions>
         <!-- Description of Cds Publisher in language code -->
-        <Description description="developer" languagecode="1033" />
+        <Description description="Harinarayanan" languagecode="1033" />
       </Descriptions>
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <!-- Customization Prefix for the Cds Publisher-->
-      <CustomizationPrefix>dev</CustomizationPrefix>
+      <CustomizationPrefix>new</CustomizationPrefix>
       <!-- Derived Option Value Prefix for the Customization Prefix of Cds Publisher -->
-      <CustomizationOptionValuePrefix>29305</CustomizationOptionValuePrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
       <Addresses>
         <!-- Address of the Publisher-->
         <Address>
