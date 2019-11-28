@@ -5,7 +5,14 @@
     </data-set>
     <property name="activityNameArray" display-name-key="Activity Names" description-key="Activity Names to be dispplayed in Graph (match entity name)" of-type="SingleLine.Text" usage="input" required="true" />
     <property name="activtyColourArray" display-name-key="Activity Colour" description-key="Colour to match the activity names" of-type="SingleLine.Text" usage="input" required="true" />
-    <property name="chartType" display-name-key="Chart Type" description-key="Type of Chart (pie, radar, bar, line, polar)" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="chartType" display-name-key="Chart Type" description-key="Type of Chart (pie, radar, bar, line, polar)" of-type="Enum" usage="input" required="true">
+      <value name="pie" display-name-key="Pie" description-key="Pie Chart">pie</value>
+      <value name="radar" display-name-key="Radar" description-key="Radar Chart">radar</value>
+      <value name="bar" display-name-key="Bar" description-key="Bar Chart">bar</value>
+      <value name="line" display-name-key="Line" description-key="Line Chart">line</value>
+      <value name="polar" display-name-key="Polar" description-key="Polar Chart">polar</value>
+      <value name="doughnut" display-name-key="Doughnut" description-key="Doughnut Chart">doughnut</value>
+    </property>
     <property name="chartTitle" display-name-key="Chart Title" description-key="Title of Chart" of-type="SingleLine.Text" usage="input" required="false" />
   
     <resources>
