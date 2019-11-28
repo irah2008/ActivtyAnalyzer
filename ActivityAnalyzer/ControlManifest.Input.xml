@@ -1,36 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="RelationshipAnalyzer" constructor="ActivityAnalyzer" version="0.1.11" display-name-key="ActivityAnalyzer" description-key="Display Activty in Radar Map" control-type="standard">
-    <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
-    <data-set name="dataSet" display-name-key="DataSet View Used" cds-data-set-options="displayCommandBar:true;displayViewSelector:true;displayQuickFindSearch:true" >
-      <!-- 'property-set' node represents a unique, configurable property that each record in the dataset must provide. -->
-      <!-- UNCOMMENT TO ADD PROPERTY-SET NODE
-      <property-set name="samplePropertySet" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
-      -->
+  <control namespace="RelationshipAnalyzer" constructor="ActivityAnalyzer" version="1.1.11" display-name-key="ActivityAnalyzer" description-key="Display Activty List in Chart" control-type="standard">
+    <data-set name="dataSet" display-name-key="View Used" cds-data-set-options="displayCommandBar:false;displayViewSelector:false;displayQuickFindSearch:false">
     </data-set>
+    <property name="activityNameArray" display-name-key="Activity Names" description-key="Activity Names to be dispplayed in Graph (match entity name)" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="activtyColourArray" display-name-key="Activity Colour" description-key="Colour to match the activity names" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="chartType" display-name-key="Chart Type" description-key="Type of Chart (pie, radar, bar, line, polar)" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="chartTitle" display-name-key="Chart Title" description-key="Title of Chart" of-type="SingleLine.Text" usage="input" required="false" />
+  
     <resources>
-      <code path="index.ts" order="1"/>
-       <css path="Resources/Chart.min.css" order="1"/>
-       <css path="css/ActivityAnalyzer.css" order="1" />
-      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <code path="index.ts" order="1" />
+      <css path="Resources/Chart.min.css" order="1" />
       <css path="css/ActivityAnalyzer.css" order="1" />
-      <resx path="strings/ActivityAnalyzer.1033.resx" version="1.0.0" />
-      -->
     </resources>
-    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
-    <feature-usage>
-      <uses-feature name="Device.captureAudio" required="true" />
-      <uses-feature name="Device.captureImage" required="true" />
-      <uses-feature name="Device.captureVideo" required="true" />
-      <uses-feature name="Device.getBarcodeValue" required="true" />
-      <uses-feature name="Device.getCurrentPosition" required="true" />
-      <uses-feature name="Device.pickFile" required="true" />
-      <uses-feature name="Utility" required="true" />
-      <uses-feature name="WebAPI" required="true" />
-    </feature-usage>
-    -->
-    <feature-usage>
-      <uses-feature name="WebAPI" required="true" />
-    </feature-usage>
   </control>
 </manifest>
