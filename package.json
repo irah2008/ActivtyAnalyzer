@@ -11,7 +11,10 @@
   "dependencies": {
     "@types/node": "^10.12.18",
     "@types/powerapps-component-framework": "^1.2.0",
-    "chart.js": "^2.9.3"
+    "chart.js": "^2.9.3",
+    "chartjs": "^0.3.24",
+    "eslint": "^8.25.0",
+    "lint": "^1.1.2"
   },
   "devDependencies": {
     "@types/chart.js": "^2.9.2",
