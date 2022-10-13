@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="RelationshipAnalyzer" constructor="ActivityAnalyzer" version="1.1.11" display-name-key="ActivityAnalyzer" description-key="Display Activty List in Chart" control-type="standard">
+  <control namespace="RelationshipAnalyzer" constructor="ActivityAnalyzer" version="1.1.24" display-name-key="ActivityAnalyzer" description-key="Display Activty List in Chart" control-type="standard">
     <data-set name="dataSet" display-name-key="View Used" cds-data-set-options="displayCommandBar:false;displayViewSelector:false;displayQuickFindSearch:false">
     </data-set>
     <property name="activityNameArray" display-name-key="Activity Names" description-key="Activity Names to be dispplayed in Graph (match entity name)" of-type="SingleLine.Text" usage="input" required="true" />
@@ -14,7 +14,6 @@
       <value name="doughnut" display-name-key="Doughnut" description-key="Doughnut Chart">doughnut</value>
     </property>
     <property name="chartTitle" display-name-key="Chart Title" description-key="Title of Chart" of-type="SingleLine.Text" usage="input" required="false" />
-  
     <resources>
       <code path="index.ts" order="1" />
       <css path="Resources/Chart.min.css" order="1" />
